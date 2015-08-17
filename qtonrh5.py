@@ -11,10 +11,10 @@ import shutil
 packages = [
 
     {"name" : "tar",        "url" : "http://ftp.gnu.org/gnu/tar/tar-1.28.tar.bz2"},
-    {"name" : "libffi",     "url" : "ftp://sourceware.org/pub/libffi/libffi-3.2.1.tar.gz"},
+    #{"name" : "libffi",     "url" : "ftp://sourceware.org/pub/libffi/libffi-3.2.1.tar.gz"},
     {"name" : "glib",       "url" : "http://ftp.gnome.org/pub/GNOME/sources/glib/2.45/glib-2.45.4.tar.xz"},
     {"name" : "pkg-config", "url" : "http://pkgconfig.freedesktop.org/releases/pkg-config-0.28.tar.gz"},
-    {"name" : "cmake", "url" : "http://www.cmake.org/files/v3.3/cmake-3.3.1.tar.gz"},
+    #{"name" : "cmake", "url" : "http://www.cmake.org/files/v3.3/cmake-3.3.1.tar.gz"},
     
     # First build the latest Python from sources
     {"name" : "python",              "url" : "https://www.python.org/ftp/python/2.7.10/Python-2.7.10.tgz"},
@@ -33,6 +33,17 @@ packages = [
     {"name" : "xextproto",           "url" : "ftp://xorg.mirrors.pair.com/X11R7.7/src/proto/xextproto-7.2.1.tar.bz2"},
     {"name" : "xtrans",              "url" : "ftp://xorg.mirrors.pair.com/X11R7.7/src/lib/xtrans-1.2.7.tar.bz2"},
     {"name" : "libX11",              "url" : "ftp://xorg.mirrors.pair.com/X11R7.7/src/lib/libX11-1.5.0.tar.bz2"},
+    {"name" : "fixesproto",           "url" : "ftp://xorg.mirrors.pair.com/X11R7.7/src/everything/fixesproto-5.0.tar.bz2"},
+    {"name" : "kbproto",              "url" : "ftp://xorg.mirrors.pair.com/X11R7.7/src/everything/kbproto-1.0.6.tar.bz2"},
+    {"name" : "xau",                  "url" : "ftp://xorg.mirrors.pair.com/X11R7.7/src/everything/libXau-1.0.7.tar.bz2"},
+    {"name" : "dmcp",                 "url" : "ftp://xorg.mirrors.pair.com/X11R7.7/src/everything/libXdmcp-1.1.1.tar.bz2"},
+    {"name" : "libXfixes",            "url" : "ftp://xorg.mirrors.pair.com/X11R7.7/src/everything/libXfixes-5.0.tar.bz2"},
+    {"name" : "renderproto",          "url" : "ftp://xorg.mirrors.pair.com/X11R7.7/src/everything/renderproto-0.11.1.tar.bz2"},
+    {"name" : "xrender",              "url" : "ftp://xorg.mirrors.pair.com/X11R7.7/src/everything/libXrender-0.9.7.tar.bz2"},
+    {"name" : "randrproto",            "url" : "ftp://xorg.mirrors.pair.com/X11R7.7/src/everything/randrproto-1.3.2.tar.bz2"},
+    {"name" : "xext",                  "url" : "ftp://xorg.mirrors.pair.com/X11R7.7/src/everything/libXext-1.3.1.tar.bz2"},
+    {"name" : "XRander",               "url" : "ftp://xorg.mirrors.pair.com/X11R7.7/src/everything/libXrandr-1.3.2.tar.bz2"},
+    {"name" : "libXcursor",           "url" : "ftp://xorg.mirrors.pair.com/X11R7.7/src/everything/libXcursor-1.1.13.tar.bz2"},
 
     # To get https URLs to work with webkit you need OpenSSL
     {"name" : "openssl",             "url" : "https://github.com/openssl/openssl/archive/OpenSSL_1_0_1p.tar.gz", "wget" : "-O OpenSSL_1_0_1p.tar.gz", "build_dir" : "openssl-OpenSSL_1_0_1p", "configure" : "./config --prefix=/tools/swott/rh5/build --openssldir=/tools/swott/rh5/build/openssl --shared"},
