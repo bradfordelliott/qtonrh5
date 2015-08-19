@@ -1,9 +1,6 @@
 # qtonrh5
-This is a repo targeted towards building QT on RH5
-
-## Initial Dependencies
 First you'll need to install the development tools. We start by
-updating the repository addresses:
+updating the repositories:
 
 ```
 wget http://people.centos.org/tru/devtools-2/devtools-2.repo -O /etc/yum.repos.d/devtools-2.repo
