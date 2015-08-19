@@ -1,14 +1,29 @@
 # qtonrh5
+
 First you'll need to install the development tools. We start by
-updating the repositories:
+updating the repositories. We need the development tools and EPEL (for git)
 
 ```
 wget http://people.centos.org/tru/devtools-2/devtools-2.repo -O /etc/yum.repos.d/devtools-2.repo
+wget http://ftp.tu-chemnitz.de/pub/linux/fedora-epel/5/x86_64/epel-release-5-4.noarch.rpm
+rpm -i epel-release-5.4.noarch.rpm
 ```
 
-Now install a minimal set of development packages
+Now using sudo or root you'll need to install the development toolset and install Git:
 ```
-yum install devtoolset-2 fontconfig-devel libX11-devel libXau-devel libXext-devel libXrender-devel
+yum install devtoolset-2
+yum install git
+```
+
+Enable the newer devepment tools:
+```
+scl enable devtoolset-2 bash
+```
+
+and then clone the git repository
+
+```
+git clone https://github.com/bradfordelliott/qtonrh5.git
 ```
 
 # O_CLOEXEC
