@@ -259,10 +259,8 @@ LD_LIBRARY_PATH=/tools/swott/rh5/build/lib:${LD_LIBRARY_PATH}
 -qt-libpng \
 -qt-libjpeg \
 -qt-pcre \
+-qt-xcb \
 -qt-xkbcommon \
--xcb \
--xcb-xlib \
--xkb-config-root /usr/share/X11/xkb \
 -nomake examples \
 -nomake tests \
 -no-dbus \
