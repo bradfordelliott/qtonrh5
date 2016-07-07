@@ -13,6 +13,9 @@ Now using sudo or root you'll need to install the development toolset and instal
 ```
 yum install devtoolset-2
 yum install git
+yum install xz
+yum install glib
+yum install zlib-devel
 ```
 
 Enable the newer devepment tools:
